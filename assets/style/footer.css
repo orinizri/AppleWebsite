@@ -1,10 +1,3 @@
-:root {
-    --footer-text-color: #8E8E92;
-    --footer-headers-color: #5D5D60;
-    --footer-li-color: #9C9CA0;
-}
-
-
 footer {
     font-size: 10px;
     background-color: #F5F5F7;

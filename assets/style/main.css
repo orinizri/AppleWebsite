@@ -8,11 +8,9 @@
   --logo3-pink-font-color: #F9BEE7;
   --links-color: #096BCE;
   --footer-gray-font: #79797E;
-  
-}
-@font-face {
-  font-family:'myfont';
-  src: url(/assets/style/fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+  --footer-text-color: #8E8E92;
+  --footer-headers-color: #5D5D60;
+  --footer-li-color: #9C9CA0;
 }
 * {
   top:0;
@@ -22,10 +20,13 @@
   box-sizing: border-box;
   font-family: myfont;
 }
+@font-face {
+  font-family:'myfont';
+  src: url(/assets/style/fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
 main {
   width: 100%;
 }
-
 .logo.lg1 {
   width: 100%;
   display: flex;
@@ -35,7 +36,6 @@ main {
   align-items: center;
   background-color: var(--bright-color);
 }
-
 .logo1.apple-gift img {
   margin-top: 30px;
   height: 70px;
