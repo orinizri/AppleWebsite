@@ -1,0 +1,146 @@
+:root {
+  --nav-bg-color: #333232;
+  --nav-font-color: #D6D6D6;
+  --bright-color: #EEEFFE;
+  --nav-red-color: #E34140;
+  --logo2-color: #FBFBFD;
+  --logo3-color: #35283C;
+  --logo3-pink-font-color: #F9BEE7;
+  --links-color: #096BCE;
+  --footer-gray-font: #79797E;
+  
+}
+@font-face {
+  font-family:'myfont';
+  src: url(/assets/style/fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+* {
+  top:0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: myfont;
+}
+main {
+  width: 100%;
+}
+
+.logo.lg1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--bright-color);
+}
+
+.logo1.apple-gift img {
+  height: 17vh;
+}
+.logo1.header p {
+  font-size: 52px;
+}
+.logo1.shop-gift a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--links-color);
+}
+.logo1.shop-gift:hover {
+  text-decoration: underline;
+}
+.logo1.shop-gift::after {
+  content:">";
+  padding: 0px 5px;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--links-color);
+}
+.logo1.img-unit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo1.img-unit img {
+  height: 55vh;
+}
+.logo.lg2 {
+  margin-top: 7px;
+  width: 100%;
+  height: 107vh;
+  background-image: url("/assets/img/hero_iphone_13pro__dhnsegysa42u_medium_2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: bottom center;
+  background-color: #FBFBFD;
+}
+.logo2.text {
+  display: flex;
+  height: 35vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo2.text h2 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+.logo2.text h3 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 5px 0px;
+}
+.logo2.links {
+  display: flex;
+  flex-direction: row;
+}
+/* both logo2 and logo3 links style */
+.logo.learnmore,
+.logo.buy {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: var(--links-color);
+  font-weight: 500;
+}
+.logo.learnmore:hover,
+.logo.buy:hover {
+  text-decoration: underline;
+}
+.logo.learnmore::after,
+.logo.buy::after {
+  content: ">";
+  padding: 0px 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.logo.lg3 {
+  margin-top: 7px;
+  background-image: url("/assets/img/logo3.jpg");
+  height: 91vh;
+  background-repeat: no-repeat;
+  background-size: 210%;
+  background-position: bottom center;
+}
+.logo3.text {
+  display: flex;
+  height: 35vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo3.text h2 {
+  font-size: 40px;
+  padding: 5px 0px;
+  color: var(--bright-color)
+}
+.logo3.text h3 {
+  font-size: 22px;
+  font-weight: 100;
+  padding: 0px 0px;
+  color: var(--logo3-pink-font-color)
+}
+.logo3.links {
+  display: flex;
+  flex-direction: row;
+}

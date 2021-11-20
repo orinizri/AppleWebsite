@@ -1,0 +1,59 @@
+nav {
+    background-color: black;
+    color: var(--nav-font-color);
+    font-size: 11px;
+    position:fixed;
+    width: 100%;
+    opacity: 0.8;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+nav ul {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    padding: 5px 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-font-color);
+}
+nav > ul > li a:hover {
+    color: var(--bright-color);
+    cursor: pointer;
+}
+nav ul li a i {
+    font-size: 1rem;
+    color: var(--bright-color);
+}
+
+.ribbon {
+    width:100%;
+    margin-top: 7vh;
+    background-color: var(--nav-red-color);
+    color: var(--bright-color);
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.ribbon a {
+    text-decoration: none;
+    color: var(--bright-color);
+    font-style: normal;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+.ribbon a:hover {
+    text-decoration: underline;
+}
+.ribbon a::after {
+    content: ">";
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px;
+}
