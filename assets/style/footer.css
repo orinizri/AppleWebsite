@@ -1,17 +1,31 @@
+:root {
+    --footer-text-color: #8E8E92;
+    --footer-headers-color: #5D5D60;
+    --footer-li-color: #9C9CA0;
+}
+
+
 footer {
     font-size: 10px;
     background-color: #F5F5F7;
     text-decoration: none;
     padding: 10px 160px;
-    color:var(--nav-bg-color);
+    font-weight: 400;
 }
 .disclaimers {
-    
-    
     line-height: 1rem;
+    border-bottom: var(--footer-li-color) 0.1px solid;
+    padding: 10px 0px;
+    color: var(--footer-text-color);
+    font-weight: 400;
+    letter-spacing: 0.4px;
 }
-hr {
-    margin: 10px 0px;
+.disclaimers a {
+    color: var(--footer-headers-color);
+    text-decoration: none;
+}
+.disclaimers a:hover {
+    text-decoration: underline;
 }
 .end-nav {
     display: grid;
@@ -25,12 +39,11 @@ hr {
 
 .end-nav div > ul > li a {
     text-decoration: none;
-    color:var(--nav-bg-color);
-    font-weight: 100;
+    color:var(--footer-headers-color);
+    font-weight: 500;
 }
 .end-nav div > ul > li a:hover {
     text-decoration: underline;
-    color:var(--nav-bg-color);
 }
 .end-nav div > ul > li p {
     font-weight: bolder;
@@ -43,12 +56,17 @@ hr {
 .more-ways {
     margin-top: 20px;
     display: flex;
+    color: var(--footer-text-color);
 }
 .more-ways a {
     text-decoration: none;
     color: var(--links-color);
 }
+.more-ways a:hover {
+    text-decoration: underline;
+}
 .copyright {
+    color: var(--footer-text-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +78,7 @@ hr {
 }
 .copyright ul > li {
     padding: 0px 10px;
-    border-left: 1px solid gray;
+    border-left: 1px solid var(--footer-text-color);
 }
 
 .copyright ul > li:first-child {
@@ -70,7 +88,8 @@ hr {
 .copyright ul li > a, 
 .copyright ul + p a {
     text-decoration: none;
-    color: var(--nav-bg-color);
+    color: var(--footer-headers-color);
+    font-weight: bold;
 }
 .copyright ul li > a:hover, .copyright ul + p a:hover {
     text-decoration: underline;

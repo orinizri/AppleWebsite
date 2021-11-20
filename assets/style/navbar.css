@@ -1,14 +1,17 @@
 nav {
     background-color: black;
     color: var(--nav-font-color);
-    font-size: 11px;
-    position:fixed;
+    font-size: 12px;
+    position:sticky;
     width: 100%;
     opacity: 0.8;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "myfont";
+    height: 8vh;
+    font-weight: 100;
+    letter-spacing: 0.5px;
 }
 nav ul {
-    height: 7vh;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,13 +32,11 @@ nav ul li a i {
     font-size: 1rem;
     color: var(--bright-color);
 }
-
 .ribbon {
     width:100%;
-    margin-top: 7vh;
     background-color: var(--nav-red-color);
     color: var(--bright-color);
-    height: 6vh;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;

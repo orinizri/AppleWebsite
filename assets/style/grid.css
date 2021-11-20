@@ -155,3 +155,9 @@ section {
     justify-content: flex-end;
     padding: 20px;
 }
+.signature {
+    max-width: 220px;
+}
+.stream a i {
+    padding: 0px 2px;
+}
